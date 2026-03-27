@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Source_Sans_3 } from 'next/font/google'
 import { Header, Footer } from '@rojasreport/ui'
+import { AIAgentWidget } from '../components/AIAgentWidget'
 
 const cormorant = Cormorant_Garamond({ subsets: ['latin'], weight: ['400', '600', '700'], style: ['normal', 'italic'], variable: '--font-headline', display: 'swap' })
 const sourceSans = Source_Sans_3({ subsets: ['latin'], weight: ['400', '600', '700'], variable: '--font-body', display: 'swap' })
@@ -42,6 +43,7 @@ export default function RootLayout({
         />
         <main>{children}</main>
         <Footer />
+        <AIAgentWidget />
       </body>
     </html>
   );

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Cormorant_Garamond, Source_Sans_3 } from 'next/font/google'
 import { Header, Footer } from '@rojasreport/ui'
+import { AIAgentWidget } from '../components/AIAgentWidget'
 import './globals.css'
 
 const cormorant = Cormorant_Garamond({
@@ -85,6 +86,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         {children}
         <Footer />
+        <AIAgentWidget />
       </body>
     </html>
   )

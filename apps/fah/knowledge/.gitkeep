@@ -1,0 +1,4 @@
+# FAH Knowledge Base
+# Drop knowledge files here. Supported: .md, .txt, .mdx
+# PDFs must be converted to .txt before adding.
+# Files are chunked and indexed automatically on next build.

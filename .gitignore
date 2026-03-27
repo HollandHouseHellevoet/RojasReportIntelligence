@@ -31,3 +31,6 @@ yarn-error.log*
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# AI agent — auto-generated knowledge store (rebuilt at every deploy)
+apps/*/netlify/functions/knowledge-data.ts

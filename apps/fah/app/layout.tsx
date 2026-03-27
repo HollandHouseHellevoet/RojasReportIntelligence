@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Cormorant_Garamond, Source_Sans_3 } from 'next/font/google'
 import './globals.css'
+import { AIAgentWidget } from '../components/AIAgentWidget'
 
 const headline = Cormorant_Garamond({
   subsets: ['latin'],
@@ -37,7 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${headline.variable} ${body.variable}`}>
-      <body className="font-body antialiased">{children}</body>
+      <body className="font-body antialiased">{children}<AIAgentWidget /></body>
     </html>
   )
 }
