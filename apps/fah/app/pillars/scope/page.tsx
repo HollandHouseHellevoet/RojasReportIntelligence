@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import SiteNav from '@/components/SiteNav'
-import SiteFooter from '@/components/SiteFooter'
 import ThreatTag from '@/components/ThreatTag'
 import StatBar from '@/components/StatBar'
 

@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import SiteNav from '@/components/SiteNav'
-import SiteFooter from '@/components/SiteFooter'
 import { boardMembers } from '@/lib/data'
 
 export const metadata: Metadata = {

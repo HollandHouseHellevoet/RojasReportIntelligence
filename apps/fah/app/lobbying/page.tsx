@@ -1,6 +1,4 @@
 import type { Metadata } from 'next'
-import SiteNav from '@/components/SiteNav'
-import SiteFooter from '@/components/SiteFooter'
 import StatBar from '@/components/StatBar'
 import PullQuote from '@/components/PullQuote'
 import DataTable from '@/components/DataTable'
