@@ -15,6 +15,7 @@ interface HeaderProps {
   links?: NavLink[]
   currentPath?: string
   subscribeHref?: string
+  ctaLabel?: string
 }
 
 const defaultLinks: NavLink[] = [
@@ -29,6 +30,7 @@ export function Header({
   links = defaultLinks,
   currentPath,
   subscribeHref = 'https://read.rojasreport.com',
+  ctaLabel = 'Subscribe',
 }: HeaderProps) {
   const [mobileOpen, setMobileOpen] = useState(false)
 
@@ -65,8 +67,8 @@ export function Header({
               rel="noopener noreferrer"
               className="font-body text-sm font-semibold border border-cream/40 bg-transparent text-cream/80 px-4 py-1.5 rounded hover:border-orange hover:text-orange transition-colors"
             >
-              Subscribe
-            </Link>
+              {ctaLabel}
+</Link>
           </nav>
 
           <button
@@ -107,8 +109,8 @@ export function Header({
               className="font-body text-sm font-semibold border border-cream/40 bg-transparent text-cream/80 px-4 py-2 rounded hover:border-orange hover:text-orange transition-colors text-center"
               onClick={() => setMobileOpen(false)}
             >
-              Subscribe
-            </Link>
+              {ctaLabel}
+</Link>
           </div>
         )}
       </div>
