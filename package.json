@@ -1,0 +1,16 @@
+{
+  "name": "rojasreport",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "type-check": "turbo type-check",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,css,md}\" --ignore-path .gitignore"
+  },
+  "devDependencies": {
+    "prettier": "^3",
+    "turbo": "^2"
+  },
+  "packageManager": "pnpm@9.0.0"
+}
