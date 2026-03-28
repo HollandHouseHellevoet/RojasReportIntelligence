@@ -22,7 +22,6 @@ export const metadata: Metadata = {
 export default function ThreeFourtyBPage() {
   return (
     <>
-      <SiteNav currentPath="/pillars" />
 
       <div className="px-6 py-3 text-xs text-gray-500" style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
         <div className="max-w-7xl mx-auto">
@@ -127,7 +126,6 @@ export default function ThreeFourtyBPage() {
         </div>
       </section>
 
-      <SiteFooter />
     </>
   )
 }

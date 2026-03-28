@@ -21,7 +21,6 @@ export const metadata: Metadata = {
 export default function DillPage() {
   return (
     <>
-      <SiteNav currentPath="/board" />
 
       {/* Breadcrumb */}
       <div className="px-6 py-3 text-xs text-gray-500" style={{ borderBottom: '1px solid rgba(255,255,255,0.06)' }}>
@@ -203,7 +202,6 @@ export default function DillPage() {
         </div>
       </section>
 
-      <SiteFooter />
     </>
   )
 }

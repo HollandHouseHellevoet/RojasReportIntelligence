@@ -23,7 +23,6 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      <SiteNav currentPath="/" />
 
       {/* Hero */}
       <section className="py-20 px-6" style={{ background: 'linear-gradient(180deg, #0a1520 0%, #0d1a26 100%)' }}>
@@ -166,7 +165,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <SiteFooter />
     </>
   )
 }

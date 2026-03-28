@@ -22,7 +22,6 @@ export const metadata: Metadata = {
 export default function LobbyingPage() {
   return (
     <>
-      <SiteNav currentPath="/lobbying" />
 
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
@@ -207,7 +206,6 @@ export default function LobbyingPage() {
         </div>
       </section>
 
-      <SiteFooter />
     </>
   )
 }

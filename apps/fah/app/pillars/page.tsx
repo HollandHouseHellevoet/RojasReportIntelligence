@@ -21,7 +21,6 @@ export const metadata: Metadata = {
 export default function PillarsIndexPage() {
   return (
     <>
-      <SiteNav currentPath="/pillars" />
 
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
@@ -61,7 +60,6 @@ export default function PillarsIndexPage() {
         </div>
       </section>
 
-      <SiteFooter />
     </>
   )
 }

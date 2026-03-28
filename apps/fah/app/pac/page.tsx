@@ -21,7 +21,6 @@ export const metadata: Metadata = {
 export default function PacPage() {
   return (
     <>
-      <SiteNav currentPath="/pac" />
 
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
@@ -197,7 +196,6 @@ export default function PacPage() {
         </div>
       </section>
 
-      <SiteFooter />
     </>
   )
 }

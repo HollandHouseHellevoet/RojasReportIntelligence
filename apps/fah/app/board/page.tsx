@@ -20,7 +20,6 @@ export const metadata: Metadata = {
 export default function BoardIndexPage() {
   return (
     <>
-      <SiteNav currentPath="/board" />
 
       {/* Hero */}
       <section className="py-16 px-6">
@@ -100,7 +99,6 @@ export default function BoardIndexPage() {
         </div>
       </section>
 
-      <SiteFooter />
     </>
   )
 }
