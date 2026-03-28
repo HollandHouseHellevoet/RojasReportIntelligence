@@ -1,3 +1,4 @@
+import React from 'react'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Container } from '@rojasreport/ui'
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
   },
 }
 
-export default function AboutPage() {
+export default function AboutPage(): React.JSX.Element {
   return (
     <main className="flex-1 py-24 md:py-32">
       <Container size="sm">
