@@ -1,7 +1,7 @@
 [build]
   command = "pnpm build"
-  publish = "out"
-  functions = "netlify/functions"
+  publish = "apps/hub/out"
+  functions = "apps/hub/netlify/functions"
 
 [build.environment]
   NODE_VERSION = "20"
