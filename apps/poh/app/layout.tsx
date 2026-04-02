@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: 'POH.RojasReport.com',
     images: [
       {
-        url: 'https://poh.rojasreport.com/og-image.png',
+        url: 'https://poh.rojasreport.com/poh-og-image.png',
         width: 1200,
         height: 630,
         alt: 'Physician-Owned Hospital Intelligence - The Rojas Report',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "Physician-Owned Hospital Intelligence | The Rojas Report",
     description:
       "The definitive intelligence record on physician-owned hospitals in the United States. 265 built. 104 survive. 85 eliminated. The complete record.",
-    images: ['https://poh.rojasreport.com/og-image.png'],
+    images: ['https://poh.rojasreport.com/poh-og-image.png'],
   },
 };
 
