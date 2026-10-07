@@ -97,10 +97,10 @@ export const boardMembers: BoardMember[] = [
     company: 'ScionHealth / Apollo',
     role: 'FAH Director',
     keyStats: [
-      { number: 'Caa2', label: "Moody's credit rating (deep junk)" },
-      { number: '3', label: 'Hospitals closed under ScionHealth' },
-      { number: '$189M', label: 'Ventas sale-leaseback proceeds' },
-      { number: '$80M', label: 'Annual rent from sale-leaseback' },
+      { number: 'Caa3', label: "Moody's rating after 2025 downgrade from Caa2" },
+      { number: '3', label: 'LTACHs closed Feb 2025 (300+ jobs)' },
+      { number: '$189M', label: 'Ventas sale-leaseback of 5 LTACs (Sept 2024)' },
+      { number: '$80M', label: 'Initial annual rent, 23-LTAC Ventas master lease (from May 2025)' },
     ],
   },
   {
@@ -110,10 +110,10 @@ export const boardMembers: BoardMember[] = [
     company: 'Prime Healthcare',
     role: 'FAH Director',
     keyStats: [
-      { number: '2003', label: 'Year CA medical license revoked' },
-      { number: '$66.25M', label: 'Combined DOJ settlements (2018 + 2019)' },
-      { number: '$375M', label: '2025 acquisition of 8 Ascension hospitals in IL' },
-      { number: '$544K+', label: 'Prime PAC contributions, 2024 cycle' },
+      { number: '$103.75M', label: 'Three False Claims Act settlements (2018, Pennsylvania, 2021)' },
+      { number: '$5.03M+', label: 'Paid personally by Reddy in those settlements' },
+      { number: '$370M+', label: 'Ascension Illinois acquisition, 8 hospitals (closed Mar 1, 2025)' },
+      { number: '3', label: 'Chicago-area hospitals ending obstetrics Oct 1, 2026' },
     ],
   },
   {
@@ -123,10 +123,10 @@ export const boardMembers: BoardMember[] = [
     company: 'Tenet Healthcare',
     role: 'FAH Director',
     keyStats: [
-      { number: '~$1.54B', label: 'Cumulative Tenet federal fraud settlements' },
-      { number: '$84.15M', label: 'Sutaria cumulative compensation 2021–2024' },
-      { number: '406:1', label: 'CEO-to-worker pay ratio (2024)' },
-      { number: '18', label: 'Years at McKinsey before Tenet' },
+      { number: '$43.1M', label: '2025 total compensation (2026 proxy)' },
+      { number: '711:1', label: 'CEO-to-median-employee pay ratio (2025)' },
+      { number: '$21.31B', label: 'Tenet FY2025 net operating revenues' },
+      { number: '533', label: 'USPI ambulatory surgery centers vs. 50 hospitals (Dec 31, 2025)' },
     ],
   },
 ]
