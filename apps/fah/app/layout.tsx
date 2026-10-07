@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Cormorant_Garamond, Source_Sans_3 } from 'next/font/google'
 import './globals.css'
+import { Header, Footer } from '@rojasreport/ui'
 import { AIAgentWidget } from '../components/AIAgentWidget'
 
 const headline = Cormorant_Garamond({
@@ -64,7 +65,21 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${headline.variable} ${body.variable}`}>
       <body className="font-body antialiased">
-        {children}
+        <Header
+          siteName="FAH Intelligence"
+          siteTagline="Federation of American Hospitals"
+          ctaLabel="Subscribe"
+          subscribeHref="https://read.rojasreport.com"
+          links={[
+            { label: 'Board', href: '/board' },
+            { label: 'Pillars', href: '/pillars' },
+            { label: 'Lobbying', href: '/lobbying' },
+            { label: 'PAC', href: '/pac' },
+            { label: 'POH Intelligence', href: 'https://poh.rojasreport.com', isExternal: true },
+          ]}
+        />
+        <main>{children}</main>
+        <Footer tagline="Primary-source intelligence on the Federation of American Hospitals. EIN 13-6226549. Built for physicians, lawmakers, and every American who pays the bill." />
         <AIAgentWidget />
       </body>
     </html>

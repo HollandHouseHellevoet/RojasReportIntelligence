@@ -8,6 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // Shared palette used by @rojasreport/ui Header and Footer
+        navy: '#1a2a3a',
+        orange: '#EB6E2C',
+        cream: '#F4F2E6',
         bg: {
           deep: '#0a1520',
           body: '#0d1a26',
