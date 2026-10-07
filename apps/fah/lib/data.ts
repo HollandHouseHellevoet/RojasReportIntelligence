@@ -149,7 +149,7 @@ export const pillars: Pillar[] = [
     title: 'CON Laws',
     subtitle: 'Certificate of Need · Market Entry Barriers · State Regulation',
     threat: 'Low',
-    summary: 'No public position.',
+    summary: 'Silent as states repeal CON; HCA CEO backed repeal (2026).',
   },
   {
     slug: 'consolidation',
@@ -157,7 +157,7 @@ export const pillars: Pillar[] = [
     title: 'Hospital Consolidation',
     subtitle: 'FTC Authority · Merger Defense · Antitrust',
     threat: 'Moderate',
-    summary: 'Pro-consolidation; opposes FTC authority.',
+    summary: 'Pro-consolidation; fought FTC noncompete rule (Ryan v. FTC).',
   },
   {
     slug: '340b',
@@ -197,15 +197,15 @@ export const pillars: Pillar[] = [
     title: 'Scope of Practice',
     subtitle: 'Nursing · Pharmacy · Allied Health Professionals',
     threat: 'Low',
-    summary: 'No public position.',
+    summary: 'No public position located; ~30 states grant NP full practice.',
   },
   {
     slug: 'transparency',
     number: '08',
     title: 'Price Transparency',
-    subtitle: 'AHA v. Azar · Compelled Disclosure · Regulatory Stability',
-    threat: 'Low',
-    summary: 'Originally litigated; now compliance.',
+    subtitle: 'AHA v. Azar · Compelled Disclosure · Insurer Transparency',
+    threat: 'Moderate',
+    summary: 'Sued, lost; now seeks hospital stability, insurer transparency.',
   },
 ]
 
