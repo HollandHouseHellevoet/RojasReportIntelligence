@@ -15,9 +15,9 @@ export const boardMembers: BoardMember[] = [
   {
     slug: 'dill',
     name: 'David Dill',
-    title: 'President & CEO',
+    title: 'Chairman & CEO',
     company: 'Lifepoint Health / Apollo Global',
-    role: 'FAH Chair',
+    role: 'FAH Chair (2026)',
     keyStats: [
       { number: '$9.2M', label: 'Annual management fees paid to Apollo' },
       { number: '$25.3M', label: 'Golden parachute value at Lifepoint' },
@@ -28,9 +28,9 @@ export const boardMembers: BoardMember[] = [
   {
     slug: 'bonick',
     name: 'Martin Bonick',
-    title: 'President & CEO',
-    company: 'Ardent Health Services',
-    role: 'FAH Chair-Elect',
+    title: 'Former President & CEO (stepped down Jun 2, 2026)',
+    company: 'Ardent Health',
+    role: 'FAH Chair-Elect (2026 slate)',
     keyStats: [
       { number: '21%', label: 'Abu Dhabi sovereign wealth stake in Ardent' },
       { number: '$145.9M', label: 'Annual rent paid to related-party landlords' },
@@ -43,7 +43,7 @@ export const boardMembers: BoardMember[] = [
     name: 'Marc Miller',
     title: 'President & CEO',
     company: 'Universal Health Services',
-    role: 'FAH Immediate Past Chair',
+    role: 'FAH Immediate Past Chair (2026)',
     keyStats: [
       { number: '$122M', label: 'False Claims Act settlement' },
       { number: '87.4%', label: 'Miller family voting control of UHS' },
@@ -56,7 +56,7 @@ export const boardMembers: BoardMember[] = [
     name: 'Mark Tarr',
     title: 'President & CEO',
     company: 'Encompass Health',
-    role: 'FAH Treasurer',
+    role: 'FAH Treasurer (2026 slate)',
     keyStats: [
       { number: '$48M', label: 'DOJ settlement amount' },
       { number: '82%', label: 'Medicare revenue dependency' },
@@ -67,7 +67,7 @@ export const boardMembers: BoardMember[] = [
   {
     slug: 'hammons',
     name: 'Kevin Hammons',
-    title: 'EVP & CFO',
+    title: 'President & CEO (since Dec 10, 2025)',
     company: 'Community Health Systems',
     role: 'FAH Director',
     keyStats: [
@@ -93,7 +93,7 @@ export const boardMembers: BoardMember[] = [
   {
     slug: 'jay',
     name: 'Rob Jay',
-    title: 'President & CEO',
+    title: 'Executive Chairman (CEO until Jun 10, 2026)',
     company: 'ScionHealth / Apollo',
     role: 'FAH Director',
     keyStats: [
@@ -106,7 +106,7 @@ export const boardMembers: BoardMember[] = [
   {
     slug: 'reddy',
     name: 'Prem Reddy MD',
-    title: 'Founder & Executive Chairman',
+    title: 'Founder, Chairman, President & CEO',
     company: 'Prime Healthcare',
     role: 'FAH Director',
     keyStats: [
@@ -210,50 +210,45 @@ export const pillars: Pillar[] = [
 ]
 
 // ─── Lobbying Firms ───────────────────────────────────────────────────────────
+// Senate LDA registrations for FAH (registrant ID 32635) per Legis1, Sept 2026.
+// Per-firm contract values are not included until verified against LD-2 filings.
 
 export interface LobbyingFirm {
   firm: string
-  contract2025: string
-  focus: string
-  notablePersonnel: string
+  status: string
+  note: string
 }
 
 export const lobbyingFirms: LobbyingFirm[] = [
   {
-    firm: 'Miller Strategies',
-    contract2025: '$540,000',
-    focus: 'Medicare reimbursement, budget reconciliation',
-    notablePersonnel: 'Thomas Scully (former CMS Administrator)',
+    firm: 'BGR Government Affairs LLC',
+    status: 'Active — registered effective Jan 1, 2026',
+    note: 'Newest addition to the roster',
   },
   {
-    firm: 'Avoq (formerly GMMB)',
-    contract2025: '$240,000',
-    focus: 'Policy communications, message strategy',
-    notablePersonnel: '',
+    firm: 'Avōq LLC',
+    status: 'Active (2026)',
+    note: 'Policy communications and advocacy',
   },
   {
-    firm: 'Marshall & Popp',
-    contract2025: '$240,000',
-    focus: 'Congressional relations',
-    notablePersonnel: '',
+    firm: 'Marshall & Popp LLC',
+    status: 'Active (2026)',
+    note: '',
   },
   {
-    firm: 'Welsh Rose',
-    contract2025: '$200,000',
-    focus: 'Senate relations',
-    notablePersonnel: '',
+    firm: 'Welsh Rose LLC',
+    status: 'Active (2026)',
+    note: '',
   },
   {
-    firm: 'Cozen O\'Connor',
-    contract2025: '$160,000',
-    focus: 'Regulatory and legal advocacy',
-    notablePersonnel: '',
+    firm: 'Capitol Tax Partners LLP',
+    status: 'Active (2026)',
+    note: 'Tax policy',
   },
   {
-    firm: 'Capitol Tax Partners',
-    contract2025: '$40,000',
-    focus: 'Tax and 340B policy',
-    notablePersonnel: '',
+    firm: 'Invariant LLC',
+    status: 'Terminated effective Jul 1, 2026 (filed Sep 10, 2026)',
+    note: 'No named lobbyist on the account from Q2 2025 through Q1 2026',
   },
 ]
 
@@ -262,20 +257,35 @@ export const lobbyingFirms: LobbyingFirm[] = [
 export const pacStats = {
   fecId: 'C00002261',
   name: 'FEDPAC',
+  // 2026 cycle: FEC summary, 2025-2026 two-year period, through the September 2026 Monthly
+  asOf2026: 'Aug 31, 2026',
+  raised2026: '$742,202',
+  contributions2026: '$770,000',
+  cashOnHand2026: '$110,929',
+  // 2024 cycle
   raised2024: '$696,257',
   contributions2024: '$353,500',
   demShare: '54%',
-  cashOnHand: '$139,881',
+  cashOnHand2024: '$139,881',
+  /** @deprecated use cashOnHand2026 or cashOnHand2024 */
+  cashOnHand: '$110,929',
   demContributions: '$190,500',
   repContributions: '$163,000',
+  // PAHCF (EIN 83-0939222) reported giving/spending summed across 2018-2024 Form 990s
+  pahcfReported: '~$33M',
 }
 
 // ─── Global Site Stats ────────────────────────────────────────────────────────
 
 export const globalStats = {
-  lobbyingSpend2024: '$3.74M',
-  retainedFirms: '6',
+  // Senate LDA totals as reported by Axios Pro (Jan 2025) and Healthcare Dive (May 2026)
+  lobbyingSpend2025: '$3.6M',
+  lobbyingSpend2024: '~$2.4M',
+  // Active outside-firm LDA registrations in 2026 (Invariant terminated Jul 1, 2026)
+  retainedFirms: '5',
   boardMembers: '9',
   pillars: '8',
-  pahcfDarkMoney: '$143M+',
+  // PAHCF (EIN 83-0939222) reported giving/spending summed across 2018-2024 Form 990s
+  pahcfDarkMoney: '~$33M',
+  dataAsOf: 'October 2026',
 }

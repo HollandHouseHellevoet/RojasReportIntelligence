@@ -3,18 +3,18 @@ import Link from 'next/link'
 import ThreatTag from '@/components/ThreatTag'
 import StatBar from '@/components/StatBar'
 import DataTable from '@/components/DataTable'
-import { pillars, boardMembers, globalStats } from '@/lib/data'
+import { pillars, boardMembers, globalStats, pacStats } from '@/lib/data'
 
 export const metadata: Metadata = {
   title: 'FAH Intelligence — The Rojas Report',
   description:
-    'The Federation of American Hospitals spends $3.74 million per year lobbying Congress. This is the public record. Board dossiers, lobbying data, PAC filings, and the eight-pillar policy matrix.',
+    'The Federation of American Hospitals spent $3.6 million lobbying Congress in 2025, its most since 2019. This is the public record. Board dossiers, lobbying data, PAC filings, and the eight-pillar policy matrix. Reviewed October 2026.',
   alternates: { canonical: 'https://fah.rojasreport.com/' },
   openGraph: {
     type: 'website',
     title: 'FAH Intelligence — The Rojas Report',
     description:
-      'The Federation of American Hospitals spends $3.74 million per year lobbying Congress. This is the public record.',
+      'The Federation of American Hospitals spent $3.6 million lobbying Congress in 2025, its most since 2019. This is the public record.',
     url: 'https://fah.rojasreport.com/',
     siteName: 'FAH.RojasReport.com',
   },
@@ -34,7 +34,7 @@ export default function HomePage() {
             Federation of American Hospitals
           </h1>
           <p className="text-xl text-gray-400 mb-8 max-w-2xl">
-            The for-profit hospital lobby. {globalStats.lobbyingSpend2024} in annual lobbying. {globalStats.pahcfDarkMoney} in undisclosed dark money. Nine board members running the systems at the center of every major healthcare policy fight.
+            The for-profit hospital lobby. {globalStats.lobbyingSpend2025} in federal lobbying in 2025, up 50 percent in a year. A PAC that has already given {pacStats.contributions2026} this cycle. New leadership. Nine board seats held by the executives running the systems at the center of every major healthcare policy fight.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
@@ -59,10 +59,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <StatBar
             stats={[
-              { number: globalStats.lobbyingSpend2024, label: 'Annual lobbying spend (2024)' },
-              { number: globalStats.retainedFirms, label: 'Retained lobbying firms' },
+              { number: globalStats.lobbyingSpend2025, label: 'Federal lobbying spend (2025)' },
+              { number: globalStats.retainedFirms, label: 'Outside lobbying firms (2026)' },
               { number: globalStats.boardMembers, label: 'Board members profiled' },
-              { number: globalStats.pahcfDarkMoney, label: 'PAHCF dark money (undisclosed)' },
+              { number: pacStats.contributions2026, label: `FEDPAC contributions, 2026 cycle (to ${pacStats.asOf2026})` },
               { number: globalStats.pillars, label: 'Policy pillars tracked' },
             ]}
           />
@@ -106,7 +106,7 @@ export default function HomePage() {
             Board of Directors
           </h2>
           <p className="text-gray-400 mb-8 max-w-2xl">
-            Nine executives. The for-profit hospital systems they run account for more than $140 billion in annual revenue and more than $2 billion in federal fraud settlements.
+            Nine seats. The for-profit hospital systems behind them booked more than $140 billion in revenue in 2025 and carry more than $3.5 billion in federal fraud settlements. Three seats changed hands or titles in the past year.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {boardMembers.map((m) => (
@@ -146,7 +146,7 @@ export default function HomePage() {
             The Machine
           </h2>
           <p className="text-gray-400 mb-6 max-w-2xl">
-            FAH maintains six retained lobbying firms, a revolving door built through Chip Kahn&rsquo;s four-decade career, and a 501(c)(4) dark money vehicle that has deployed more than {globalStats.pahcfDarkMoney} since 2018.
+            FAH spent {globalStats.lobbyingSpend2025} on federal lobbying in 2025, its highest since 2019, through five outside firms and an in-house team now run by a former Merck lobbyist. Chip Kahn retired after almost 25 years; Charlene MacDonald took over January 1, 2026. The PAHCF 501(c)(4) FAH co-founded reports {globalStats.pahcfDarkMoney} in undisclosed-donor spending since 2018.
           </p>
           <div className="flex flex-wrap gap-4">
             <Link
