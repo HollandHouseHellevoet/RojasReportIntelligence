@@ -165,7 +165,7 @@ export const pillars: Pillar[] = [
     title: '340B Drug Pricing',
     subtitle: '340B Program · Contract Pharmacy · Drug Manufacturers',
     threat: 'Low',
-    summary: 'Members excluded; opposes clawback.',
+    summary: 'Members excluded; backs CMS cuts to 340B hospital pay (2026).',
   },
   {
     slug: 'idr',
@@ -173,7 +173,7 @@ export const pillars: Pillar[] = [
     title: 'No Surprises Act / IDR',
     subtitle: 'Independent Dispute Resolution · QPA · Out-of-Network',
     threat: 'Moderate',
-    summary: 'Opposes QPA-centric methodology.',
+    summary: 'Opposes QPA-centric IDR; lost Guardian Flight (5th Cir. 2025).',
   },
   {
     slug: 'poh-ban',
@@ -181,7 +181,7 @@ export const pillars: Pillar[] = [
     title: 'Physician-Owned Hospital Ban',
     subtitle: 'Section 6001 ACA · Stark Law · POH Repeal Bills',
     threat: 'Critical',
-    summary: 'Authored and defends Section 6001 of the ACA.',
+    summary: 'Authored §6001; 3 repeal bills live in the 119th Congress.',
   },
   {
     slug: 'site-neutral',
@@ -189,7 +189,7 @@ export const pillars: Pillar[] = [
     title: 'Site-Neutral Payments',
     subtitle: 'Payment Parity · HOPD vs. Physician Office · Medicare Savings',
     threat: 'High',
-    summary: 'Strongly opposes all proposals.',
+    summary: 'Opposes; CMS cuts expanded 2026, more proposed for 2027.',
   },
   {
     slug: 'scope',

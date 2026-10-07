@@ -8,13 +8,13 @@ import DataTable from '@/components/DataTable'
 export const metadata: Metadata = {
   title: 'Physician-Owned Hospital Ban — FAH Position | Pillar 05',
   description:
-    "FAH authored and defends the 2010 ban on physician-owned hospitals. Chip Kahn admitted publicly: 'The current ban on physician-owned hospitals wouldn't be there if it wasn't for the Federation.'",
+    "FAH authored and defends the 2010 ban on physician-owned hospitals. Former CEO Chip Kahn admitted in 2021: 'The current ban on physician-owned hospitals wouldn't be there if it wasn't for the Federation.' Three repeal bills are live in the 119th Congress.",
   alternates: { canonical: 'https://fah.rojasreport.com/pillars/poh-ban' },
   openGraph: {
     type: 'article',
     title: 'Physician-Owned Hospital Ban — FAH Position | Pillar 05',
     description:
-      "FAH authored the POH ban. Chip Kahn on record: 'The ban wouldn't be there if it wasn't for the Federation.'",
+      "FAH authored the POH ban. Chip Kahn on record: 'The ban wouldn't be there if it wasn't for the Federation.' H.R. 4002, S. 1390 and H.R. 2191 pending in the 119th Congress.",
     url: 'https://fah.rojasreport.com/pillars/poh-ban',
     siteName: 'FAH.RojasReport.com',
   },
@@ -52,8 +52,8 @@ export default function PohBanPage() {
           <StatBar
             stats={[
               { number: '16', label: 'Years the physician-owned hospital ban has been in effect' },
-              { number: '7', label: 'Congresses in which FAH has defended the ban' },
-              { number: '$0', label: 'Documented Medicare savings from the ban' },
+              { number: '8', label: 'Congresses (112th–119th) with repeal bills introduced; FAH has defended the ban in each' },
+              { number: '3', label: 'Repeal bills pending in the 119th Congress (H.R. 4002, S. 1390, H.R. 2191)' },
               { number: '2010', label: 'Year FAH authored Section 6001 of the ACA' },
             ]}
           />
@@ -72,13 +72,16 @@ export default function PohBanPage() {
           </h2>
           <PullQuote
             quote="The current ban on physician-owned hospitals wouldn't be there if it wasn't for the Federation. I don't think I've ever admitted this publicly..."
-            attribution="Chip Kahn, President and CEO, Federation of American Hospitals, Advisory Board interview, June 2021"
+            attribution="Chip Kahn, then-President and CEO, Federation of American Hospitals, Advisory Board interview, June 2021"
           />
           <p className="text-gray-300 mt-6 leading-relaxed">
             Kahn&rsquo;s full statement continued: &ldquo;...but I can remember emailing one of the staffers, literally sending in talking points to some of the senators as the process was taking place.&rdquo;
           </p>
           <p className="text-gray-300 mt-4 leading-relaxed">
-            This is the most direct public admission by any FAH official that the organization authored the physician-owned hospital ban embedded in the Affordable Care Act. The ban has been in effect since 2010 and has prevented the expansion of more than 265 physician-owned hospitals that existed at passage.
+            The interview, published by Advisory Board in June 2021 under the headline &ldquo;&lsquo;If we hadn&rsquo;t been there, history might have been different&rsquo;: Chip Kahn on two decades helming the Federation of American Hospitals,&rdquo; was reposted by FAH itself. It is the most direct public admission by any FAH official that the organization authored the physician-owned hospital ban embedded in the Affordable Care Act. The ban has been in effect since 2010 and has prevented the expansion of more than 265 physician-owned hospitals that existed at passage.
+          </p>
+          <p className="text-gray-300 mt-4 leading-relaxed">
+            Kahn retired on December 31, 2025 after 24 years as FAH&rsquo;s president and CEO. Charlene MacDonald, who had run FAH&rsquo;s lobbying and public affairs since 2023, became President and CEO on January 1, 2026. The defense of Section 6001 is now hers.
           </p>
         </div>
       </section>
@@ -135,42 +138,85 @@ export default function PohBanPage() {
             <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#EB6E2C' }}>04</span>
             <span className="text-xs uppercase tracking-wider text-gray-500">REPEAL BILLS</span>
           </div>
-          <h2 className="font-headline text-3xl font-bold mb-4" style={{ color: '#f7f4ef' }}>POH Repeal Bills (114th–119th Congress)</h2>
+          <h2 className="font-headline text-3xl font-bold mb-4" style={{ color: '#f7f4ef' }}>POH Repeal Bills (112th&ndash;119th Congress)</h2>
           <p className="text-gray-300 mb-6 leading-relaxed">
-            Physician-owned hospital advocates have introduced repeal legislation in every Congress since 2010. FAH has opposed every bill. None have passed.
+            Physician-owned hospital advocates have introduced repeal legislation in every Congress since the ban was enacted. FAH, usually in joint letters with the American Hospital Association, has opposed each effort. None has become law.
           </p>
           <DataTable
             headers={['Congress', 'Bill', 'Status']}
             rows={[
-              ['114th', 'Fair Competition in Healthcare Act', 'Died in committee'],
-              ['115th', 'Fair Competition in Healthcare Act', 'Died in committee'],
-              ['116th', 'Multiple repeal bills introduced', 'Died in committee'],
-              ['117th', 'Multiple repeal bills introduced', 'Died in committee'],
-              ['118th', 'H.R. 4002, H.R. 2191 / S. 1390', 'Active; FAH opposed'],
-              ['119th', 'Repeal legislation anticipated', 'Pending'],
+              ['112th–113th', 'Repeal legislation introduced', 'Died in committee'],
+              ['114th', 'Repeal legislation introduced', 'Died in committee'],
+              ['115th', 'H.R. 1156 — Patient Access to Higher Quality Health Care Act of 2017', 'Died in committee'],
+              ['116th', 'S. 2860 (Lankford) — Patient Access to Higher Quality Health Care Act of 2019', 'Died in committee; AHA/FAH opposition letters Jan. 11 and Nov. 19, 2019'],
+              ['117th', 'Repeal legislation introduced', 'Died in committee'],
+              ['118th', 'H.R. 977 / S. 470 — Patient Access to Higher Quality Health Care Act of 2023; H.R. 9001 — Physician Led and Rural Access to Quality Care Act', 'Died in committee; AHA/FAH joint opposition letter March 29, 2023'],
+              ['119th', 'H.R. 4002 (Van Duyne, June 12, 2025); S. 1390 (Lankford, April 9, 2025); H.R. 2191 (House companion to S. 1390)', 'Pending; referred to committee'],
             ]}
           />
         </div>
       </section>
 
-      {/* Section 05 — FAH Opposition Letters */}
+      {/* Section 05 — The 119th-Congress Bills */}
       <section className="py-16 px-6" style={{ background: '#0a1520' }}>
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#EB6E2C' }}>05</span>
+            <span className="text-xs uppercase tracking-wider text-gray-500">LIVE LEGISLATION</span>
+          </div>
+          <h2 className="font-headline text-3xl font-bold mb-4" style={{ color: '#f7f4ef' }}>The 119th-Congress Bills</h2>
+          <p className="text-gray-300 mb-6 leading-relaxed">
+            Three repeal bills are pending in the current Congress. The American Medical Association has formally endorsed ending the restrictions, arguing that physician-owned hospitals can meet rural health needs, and the American College of Radiology also supports repeal.
+          </p>
+          <DataTable
+            headers={['Bill', 'Sponsor', 'Introduced', 'What it does']}
+            rows={[
+              [
+                'H.R. 4002 — Patient Access to Higher Quality Health Care Act of 2025',
+                'Rep. Beth Van Duyne (R-TX)',
+                'June 12, 2025',
+                'Full repeal of ACA Sections 6001 and 10601 and HCERA Section 1106. Referred to Energy & Commerce and Ways & Means. Bipartisan cosponsors include Rep. Henry Cuellar (D-TX), Hern, Miller-Meeks, Biggs, Yakym, Harris (MD), Dunn (FL) and Pfluger.',
+              ],
+              [
+                'S. 1390 — Physician Led and Rural Access to Quality Care Act',
+                'Sen. James Lankford (R-OK)',
+                'April 9, 2025',
+                'Rural-access exception to the ban (see House companion H.R. 2191). Referred to committee. Cosponsors: Marshall, Cassidy, Tillis, Cornyn, Mullin, Boozman, Barrasso, Budd.',
+              ],
+              [
+                'H.R. 2191 — Physician Led and Rural Access to Quality Care Act',
+                'House companion to S. 1390',
+                '119th Congress',
+                'Rural exception for hospitals more than 35 miles from another hospital. Referred to Ways & Means and Energy & Commerce.',
+              ],
+            ]}
+          />
+        </div>
+      </section>
+
+      {/* Section 06 — FAH Opposition Letters */}
+      <section className="py-16 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-center gap-3 mb-2">
+            <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#EB6E2C' }}>06</span>
             <span className="text-xs uppercase tracking-wider text-gray-500">FAH OPPOSITION LETTERS</span>
           </div>
           <h2 className="font-headline text-3xl font-bold mb-4" style={{ color: '#f7f4ef' }}>FAH Opposition Letters (2017&ndash;2025)</h2>
+          <p className="text-gray-300 mb-6 leading-relaxed">
+            FAH&rsquo;s most consequential letters on the ban have been joint letters with the AHA. Three are confirmed from the AHA&rsquo;s own archive: January 11, 2019; November 19, 2019; and March 29, 2023.
+          </p>
           <DataTable
             headers={['Date', 'Target', 'Subject']}
             rows={[
-              ['2017', 'House Ways &amp; Means Committee', 'Opposition to POH expansion provisions in tax reform'],
+              ['2017', 'House Ways & Means Committee', 'Opposition to POH expansion provisions in tax reform'],
               ['2018', 'Senate Finance Committee', 'Opposition to POH repeal in various health bills'],
-              ['2019', 'House Energy &amp; Commerce', 'Opposition to H.R. 2513'],
+              ['January 11, 2019', 'Congress (joint AHA/FAH letter)', 'Urged Congress to keep the ban on self-referral to physician-owned hospitals'],
+              ['2019', 'House Energy & Commerce', 'Opposition to H.R. 2513'],
+              ['November 19, 2019', 'Congress (joint AHA/FAH letter)', 'Opposition to legislation (S. 2860) to repeal the ban on self-referral to physician-owned hospitals'],
               ['2020', 'Multiple committees', 'COVID relief bills — oppose POH waiver expansions'],
-              ['2021', 'House Ways &amp; Means', 'Opposition to Build Back Better POH provisions'],
+              ['2021', 'House Ways & Means', 'Opposition to Build Back Better POH provisions'],
               ['2022', 'Senate Finance', 'Opposition to standalone POH repeal bills'],
-              ['2023', 'House Energy &amp; Commerce, Senate Finance', 'Opposition to H.R. 4002, H.R. 2191'],
+              ['March 29, 2023', 'Congress (joint AHA/FAH letter)', 'Opposition to H.R. 977 / S. 470, which would allow "unfettered growth" of self-referral to physician-owned hospitals'],
               ['2024', 'Multiple', 'Opposition to 118th Congress repeal efforts'],
               ['2025', 'Multiple', 'Opposition to 119th Congress activity'],
             ]}
@@ -178,14 +224,17 @@ export default function PohBanPage() {
         </div>
       </section>
 
-      {/* Section 06 — The Evidence */}
-      <section className="py-16 px-6">
+      {/* Section 07 — The Evidence */}
+      <section className="py-16 px-6" style={{ background: '#0a1520' }}>
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-2">
-            <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#EB6E2C' }}>06</span>
+            <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#EB6E2C' }}>07</span>
             <span className="text-xs uppercase tracking-wider text-gray-500">FAH CLAIMS vs. EVIDENCE</span>
           </div>
           <h2 className="font-headline text-3xl font-bold mb-4" style={{ color: '#f7f4ef' }}>FAH Claims vs. Independent Research</h2>
+          <p className="text-gray-300 mb-6 leading-relaxed">
+            The AHA/FAH talking points, as set out in their March 29, 2023 letter: physician-owned hospitals avoid Medicaid and uninsured patients, treat fewer complex cases, provide fewer emergency services, earn &ldquo;patient care margins 15 times&rdquo; those of community hospitals, and are penalized for readmissions &ldquo;at five times the rate.&rdquo;
+          </p>
           <DataTable
             headers={['FAH Claim', 'Independent Research Finding']}
             rows={[
@@ -203,23 +252,23 @@ export default function PohBanPage() {
               ],
               [
                 'POHs harm communities',
-                'AAOS / physician association data: POHs often serve as primary orthopedic, cardiac, and surgical access in markets',
+                'AAOS / physician association data: POHs often serve as primary orthopedic, cardiac, and surgical access in markets; the AMA argues POHs can meet rural health needs',
               ],
             ]}
           />
         </div>
       </section>
 
-      {/* Section 07 — Current Threat */}
-      <section className="py-16 px-6" style={{ background: '#0a1520' }}>
+      {/* Section 08 — Current Threat */}
+      <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-3 mb-2">
-            <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#EB6E2C' }}>07</span>
+            <span className="text-xs font-semibold uppercase tracking-wider" style={{ color: '#EB6E2C' }}>08</span>
             <span className="text-xs uppercase tracking-wider text-gray-500">CURRENT THREAT ASSESSMENT</span>
           </div>
           <h2 className="font-headline text-3xl font-bold mb-4" style={{ color: '#f7f4ef' }}>Current Threat Assessment</h2>
           <p className="text-gray-300 mb-6 leading-relaxed">
-            The physician-owned hospital ban faces its most serious legislative threat in the 119th Congress. H.R. 4002 (118th Congress) passed out of committee with bipartisan support before dying on the floor. H.R. 2191 and S. 1390 had significant co-sponsorship. The incoming Congress and administration have signaled openness to POH reform as part of broader healthcare deregulation.
+            The physician-owned hospital ban faces three live repeal bills in the 119th Congress: H.R. 4002 (introduced June 12, 2025, with bipartisan cosponsors), S. 1390 (April 9, 2025, with eight Republican cosponsors) and its House companion H.R. 2191. All three have been referred to committee; no POH repeal bill has been reported out of committee in either the 118th or 119th Congress. The AMA&rsquo;s formal endorsement of lifting the restrictions gives the repeal effort organized-medicine backing it previously lacked.
           </p>
           <div
             className="p-5 rounded-lg text-sm text-gray-300"
@@ -233,16 +282,24 @@ export default function PohBanPage() {
         </div>
       </section>
 
-      <section className="py-16 px-6">
+      <section className="py-16 px-6" style={{ background: '#0a1520' }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="font-headline text-2xl font-bold mb-4" style={{ color: '#f7f4ef' }}>Sources</h2>
           <ul className="source-list">
-            <li>Chip Kahn, Advisory Board interview, June 2021</li>
+            <li>Advisory Board, &ldquo;&lsquo;If we hadn&rsquo;t been there, history might have been different&rsquo;: Chip Kahn on two decades helming the Federation of American Hospitals,&rdquo; June 2021 (reposted by FAH)</li>
+            <li>Medscape report on lawmakers weighing lifting national restrictions on physician-owned hospitals (2024), quoting Kahn&rsquo;s admission</li>
+            <li>FAH, &ldquo;Chip Kahn Announces Retirement&rdquo; and &ldquo;Charlene MacDonald Named President &amp; Chief Executive Officer,&rdquo; 2025 (effective January 1, 2026)</li>
             <li>ACA Section 6001 legislative text and conference report</li>
             <li>MedPAC physician-owned hospital reports (2005, 2006)</li>
             <li>GAO physician-owned hospital study (2010)</li>
-            <li>Congress.gov: H.R. 4002, H.R. 2191, S. 1390 (118th Congress)</li>
+            <li>Congress.gov: H.R. 4002 (119th Congress, introduced June 12, 2025); Rep. Van Duyne press release, June 2025</li>
+            <li>Govinfo bill status: S. 1390 (119th Congress, introduced April 9, 2025); H.R. 2191 (119th Congress); Sen. Lankford press release</li>
+            <li>Congress.gov: H.R. 977 and S. 470 (118th Congress); Govinfo: H.R. 9001 (118th Congress)</li>
+            <li>Govinfo bill summaries: H.R. 1156 (115th Congress); S. 2860 (116th Congress)</li>
+            <li>AHA/FAH joint letters to Congress on physician-owned hospitals: January 11, 2019; November 19, 2019; March 29, 2023 (AHA letter archive)</li>
+            <li>American Medical Association leadership statements endorsing an end to restrictions on physician-owned hospitals; American College of Radiology, physician-owned hospitals advocacy page</li>
             <li>FAH opposition letter archive (2017–2025)</li>
+            <li>Reviewed October 2026.</li>
           </ul>
         </div>
       </section>
