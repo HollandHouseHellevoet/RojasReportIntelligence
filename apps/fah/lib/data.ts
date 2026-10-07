@@ -19,10 +19,10 @@ export const boardMembers: BoardMember[] = [
     company: 'Lifepoint Health / Apollo Global',
     role: 'FAH Chair (2026)',
     keyStats: [
-      { number: '$9.2M', label: 'Annual management fees paid to Apollo' },
-      { number: '$25.3M', label: 'Golden parachute value at Lifepoint' },
-      { number: '7', label: 'Broken promises to acquired communities' },
-      { number: '$5.6B', label: 'RCCH HealthCare acquisition price' },
+      { number: '$9.2M', label: 'Annual management fee Lifepoint pays Apollo' },
+      { number: '$25.3M', label: 'Potential golden parachute disclosed in 2018 merger proxy' },
+      { number: '7', label: 'Promises to Ottumwa Regional Health Center found unfulfilled (Senate Budget Committee)' },
+      { number: '$5.6B', label: 'Apollo take-private / RCCH merger enterprise value (2018)' },
     ],
   },
   {
@@ -32,10 +32,10 @@ export const boardMembers: BoardMember[] = [
     company: 'Ardent Health',
     role: 'FAH Chair-Elect (2026 slate)',
     keyStats: [
-      { number: '21%', label: 'Abu Dhabi sovereign wealth stake in Ardent' },
-      { number: '$145.9M', label: 'Annual rent paid to related-party landlords' },
-      { number: '137:1', label: 'CEO-to-worker pay ratio' },
-      { number: '$5.97B', label: 'Ardent annual revenue' },
+      { number: '21.1%', label: 'Abu Dhabi state-backed Pure Health voting stake in Ardent (2026 proxy)' },
+      { number: '$152.9M', label: 'FY2025 rent paid to Ventas, a 6.5% shareholder' },
+      { number: '107:1', label: 'CEO-to-worker pay ratio, FY2025' },
+      { number: '$6.32B', label: 'Ardent FY2025 total revenue' },
     ],
   },
   {
@@ -45,10 +45,10 @@ export const boardMembers: BoardMember[] = [
     company: 'Universal Health Services',
     role: 'FAH Immediate Past Chair (2026)',
     keyStats: [
-      { number: '$122M', label: 'False Claims Act settlement' },
-      { number: '87.4%', label: 'Miller family voting control of UHS' },
-      { number: '309:1', label: 'CEO-to-worker pay ratio' },
-      { number: '$15.8B', label: 'UHS annual revenue' },
+      { number: '$122M', label: 'False Claims Act and kickback settlements, July 2020' },
+      { number: '$16.1M', label: 'Miller 2025 total compensation (2026 proxy)' },
+      { number: '283:1', label: 'CEO-to-worker pay ratio, FY2025' },
+      { number: '$17.4B', label: 'UHS FY2025 net revenues' },
     ],
   },
   {
