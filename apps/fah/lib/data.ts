@@ -58,10 +58,10 @@ export const boardMembers: BoardMember[] = [
     company: 'Encompass Health',
     role: 'FAH Treasurer (2026 slate)',
     keyStats: [
-      { number: '$48M', label: 'DOJ settlement amount' },
-      { number: '82%', label: 'Medicare revenue dependency' },
-      { number: '$280M', label: 'Site-neutral payment exposure' },
-      { number: '204:1', label: 'CEO-to-worker pay ratio' },
+      { number: '$5.94B', label: 'FY2025 net operating revenue' },
+      { number: '82%', label: 'Revenue from Medicare + Medicare Advantage (FY2025)' },
+      { number: '$48M', label: '2019 False Claims Act settlement (DOJ)' },
+      { number: '203:1', label: 'CEO-to-median-worker pay ratio (FY2025)' },
     ],
   },
   {
@@ -71,10 +71,10 @@ export const boardMembers: BoardMember[] = [
     company: 'Community Health Systems',
     role: 'FAH Director',
     keyStats: [
-      { number: '19,000+', label: 'Patient debt lawsuits filed by CHS' },
-      { number: '$262M', label: 'DOJ settlement (United States v. Carlisle HMA)' },
-      { number: '6.1M', label: 'Patient records breached' },
-      { number: '$11.5B', label: 'CHS total debt' },
+      { number: '$10.4B', label: 'CHS total debt (Dec 31, 2025)' },
+      { number: '$262M', label: '2018 DOJ global resolution (HMA / United States v. Carlisle HMA)' },
+      { number: '19,000+', label: 'Patients sued by CHS hospitals during the pandemic (CNN / KFF Health News)' },
+      { number: '6.1M', label: 'Patient records breached (2014); $5M settlement with 28 states' },
     ],
   },
   {
@@ -84,10 +84,10 @@ export const boardMembers: BoardMember[] = [
     company: 'HCA Healthcare',
     role: 'FAH Director',
     keyStats: [
-      { number: '$1.7B', label: 'Total federal fraud settlement (largest in US history)' },
-      { number: '$23.8M', label: 'Hazen total 2024 compensation' },
-      { number: '391:1', label: 'CEO-to-worker pay ratio' },
-      { number: '$75.6B', label: 'HCA annual revenue' },
+      { number: '$75.6B', label: 'HCA FY2025 revenue' },
+      { number: '$26.5M', label: 'Hazen total 2025 compensation' },
+      { number: '420:1', label: 'CEO-to-median-worker pay ratio (2025)' },
+      { number: '$1.7B', label: 'Federal fraud settlements, 2000-2003 (largest in US health care at the time)' },
     ],
   },
   {
