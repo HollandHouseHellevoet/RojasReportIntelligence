@@ -1,0 +1,10 @@
+# fah.rojasreport.com now lives at rojasreport.com/fah/
+# Pages that no longer exist on the new desk go to the desk overview.
+/board            https://rojasreport.com/fah/  301!
+/board/           https://rojasreport.com/fah/  301!
+/board/bonick     https://rojasreport.com/fah/  301!
+/board/bonick/    https://rojasreport.com/fah/  301!
+/board/jay        https://rojasreport.com/fah/  301!
+/board/jay/       https://rojasreport.com/fah/  301!
+# Every other old URL maps to the same path under /fah/ with a permanent redirect.
+/*  https://rojasreport.com/fah/:splat  301!
